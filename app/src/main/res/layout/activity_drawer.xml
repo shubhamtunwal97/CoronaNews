@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fake" />
+
+        <com.github.mzule.fantasyslide.SideBar
+            android:id="@+id/leftSideBar"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#00b7ff"
+            android:gravity="center_vertical"
+            app:maxTranslationX="66dp">
+<ImageView
+    android:id="@+id/imageicon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/ic_launcher"
+    android:scaleType="centerCrop"
+    />
+
+            <LinearLayout
+                android:id="@+id/userInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top News"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="Business" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/wallet"
+                android:text="Computers"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"/>
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:text="Health" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/friends"
+                android:text="Sports" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/settings"
+                android:text="Science" />
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/settings"
+                android:text="References" />
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/settings"
+                android:text="Society" />
+
+            <TextView
+            style="@style/MenuText"
+            android:drawableLeft="@drawable/settings"
+            android:text="Shopping" />
+        </com.github.mzule.fantasyslide.SideBar>
+
+
+
+
+
+    </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+    <TextView
+        android:id="@+id/tipView"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
